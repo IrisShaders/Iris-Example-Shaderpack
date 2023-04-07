@@ -284,7 +284,11 @@ void main() {
 
     // trick: use if defined instead of ifdef to not make it a shader option
     #if defined OLD
+            beginText(ivec2(coord), ivec2(viewWidth / pixelSize / 2.0 - 13.0 * 6.0, 24.0));
+                text.bgCol = vec4(0.0);
+                text.fgCol = vec4(LOGO_COLORS[int(coord.x / 6.0 + frameTimeCounter * 4.0) % 16], 1.0);
     printString((_U, _p, _g, _r, _a, _d, _e, _space, _I, _r, _i, _s));
+        endText(color);
     #else
         beginText(ivec2(coord), ivec2(viewWidth / pixelSize / 2.0 - 13.0 * 6.0, 24.0));
     text.bgCol = vec4(0.0);
