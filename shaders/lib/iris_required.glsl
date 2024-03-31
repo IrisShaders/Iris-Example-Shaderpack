@@ -305,7 +305,7 @@ endText(color);
 beginText(ivec2(coord), ivec2(viewWidth / pixelSize / 2.0 - 7.5 * 6.0, 20.0));
 text.bgCol = vec4(0.0);
 text.fgCol = vec4(LOGO_COLORS[int(coord.x / 6.0 + frameTimeCounter * 4.0) % 16], 1.0);
-printString((_i, _r, _i, _s, _s, _h, _a, _d, _e, _r, _s, _dot, _n, _e, _t));
+printString((_i, _r, _i, _s, _s, _h, _a, _d, _e, _r, _s, _dot, _d, _e, _v));
 endText(color);
 
 #endif
